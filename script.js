@@ -11,4 +11,11 @@ window.addEventListener('scroll', function() {
       sidebar.style.marginTop = '0';
     }
   });
+  document.querySelectorAll('.navimg img').forEach(img => {
+    img.addEventListener('click', function() {
+      const link = this.parentElement.getAttribute('href');
+      window.open(link, '_blank');
+    });
+  });
+  
   
